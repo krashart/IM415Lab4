@@ -8,7 +8,7 @@
 <li>
      <input bind:checked={checked} on:change={toggleDone} type="checkbox"> 
      <span class:checked={checked}>{text}</span>
-     <button class="button1" type="button" on:click={removeItem} >Delete</button>
+     <button class="button1" type="button" on:click={removeItem} >Been There</button>
 </li>
 
 <style>
