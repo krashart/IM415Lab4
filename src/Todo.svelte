@@ -48,8 +48,7 @@
        <option value="Khajuraho">
        <option value="Kukke">
      </datalist>
-     <input type="submit" value="Choose Wisely!" on:click={handleClick}
-	Clicked {count} {count === 1 ? 'time' : 'times'}>
+     <input type="submit" value="Choose Wisely!" on:click={handleClick}>	
    </form>
 <ul>
      {#each todoList as item, index}
