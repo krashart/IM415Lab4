@@ -22,6 +22,16 @@
           todoList[index].checked = v;
           todoList = todoList;
      }
+     let count1 = 0;
+
+	$: if (count1 >= 5) {
+		alert(`That's almost all of them!`);
+		count = 4;
+	} 
+
+	function handleClick() {
+		count1 += 1;
+	}
 </script>
 
 <!-- <form on:submit|preventDefault={addToList}>
@@ -29,7 +39,7 @@
 </form> -->
 
 <form on:submit|preventDefault={addToList}>
-     <input bind:value={newItem} list="temples" name="temple">
+     <input bind:value={newItem} list="temples" name="temple" autocomplete="off">
      <datalist id="temples">
        <option value="Angkor Wat">
        <option value="Katas Raj">
@@ -38,7 +48,8 @@
        <option value="Khajuraho">
        <option value="Kukke">
      </datalist>
-     <input type="submit" value="Choose Wisely!">
+     <input type="submit" value="Choose Wisely!" on:click={handleClick}
+	Clicked {count} {count === 1 ? 'time' : 'times'}>
    </form>
 <ul>
      {#each todoList as item, index}

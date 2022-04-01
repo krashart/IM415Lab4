@@ -15,16 +15,24 @@
      .checked {
           text-decoration: line-through;
      }
+
+     li {
+          font-size: 22px;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          color: white;
+          margin: 5px;
+     }
      .button1 {
           background-color: white;
           color: black;
           border: 1px solid rgb(254, 0, 0);
-          padding: 10px 15px;
+          padding: 5px 10px;
           text-align: center;
           text-decoration: none;
           display: inline-block;
-          font-size: 12px;
+          font-size: 16px;
           transition-duration: 0.4s;
+          margin-left: 20px;
      }
      .button1:hover {
           background-color: #555555;
