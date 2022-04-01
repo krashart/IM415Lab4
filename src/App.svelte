@@ -14,11 +14,11 @@
 	    <p>Angkor Wat, Krong Siem Reap, Cambodia</p>
 	  </div>
 	  <div class="col">
-		<img src="./img/katas.jpg" alt="Picture of Katas Raj Temples, Pakistan">
+		<img src="./img/katas.jpg" alt="pic of Katas Raj Temples, Pakistan">
 		<p>Katas Raj Temples, Pakistan</p>
 	  </div>
 	  <div class="col">
-		<img src="./img/bagan.jpg" alt="pic Bagan, Myanmar (Burma)">
+		<img src="./img/bagan.jpg" alt="pic of Bagan, Myanmar (Burma)">
 		<p>Bagan, Myanmar (Burma)</p>
 	  </div>
 	</div>

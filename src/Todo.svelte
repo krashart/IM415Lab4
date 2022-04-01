@@ -24,9 +24,22 @@
      }
 </script>
 
-<form on:submit|preventDefault={addToList}>
+<!-- <form on:submit|preventDefault={addToList}>
      <input bind:value={newItem}>
-</form>
+</form> -->
+
+<form on:submit|preventDefault={addToList}>
+     <input bind:value={newItem} list="temples" name="temple">
+     <datalist id="temples">
+       <option value="Angkor Wat">
+       <option value="Katas Raj">
+       <option value="Bagan">
+       <option value="Byodo-In">
+       <option value="Khajuraho">
+       <option value="Kukke">
+     </datalist>
+     <input type="submit" value="Choose Wisely!">
+   </form>
 <ul>
      {#each todoList as item, index}
           <Item 
